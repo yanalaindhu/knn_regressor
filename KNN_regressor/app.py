@@ -6,21 +6,21 @@ import pickle
 # LOAD MODEL
 # ---------------------------------------------------
 model = pickle.load(
-    open("models/knn_model.pkl", "rb")
+    open("KNN_regressor/models/knn_model.pkl", "rb")
 )
 
 # ---------------------------------------------------
 # LOAD SCALER
 # ---------------------------------------------------
 scaler = pickle.load(
-    open("models/scaler.pkl", "rb")
+    open("KNN_regressor/models/scaler.pkl", "rb")
 )
 
 # ---------------------------------------------------
 # PAGE CONFIG
 # ---------------------------------------------------
 st.set_page_config(
-    page_title="Insurance Prediction App"
+    page_title="Insurance Charges Prediction"
 )
 
 # ---------------------------------------------------
@@ -28,7 +28,7 @@ st.set_page_config(
 # ---------------------------------------------------
 st.title("Insurance Charges Prediction")
 
-st.write("Machine Learning Project using KNN Regressor")
+st.write("KNN Regressor Machine Learning Project")
 
 # ---------------------------------------------------
 # USER INPUTS
@@ -124,4 +124,4 @@ if st.button("Predict Insurance Charges"):
 
 st.write("--------------------------------")
 
-st.write("KNN Regressor Insurance Project")
+st.write("Project Developed using KNN Regressor")
